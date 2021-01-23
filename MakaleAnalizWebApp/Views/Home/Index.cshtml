@@ -1,0 +1,180 @@
+﻿@{
+    ViewBag.Title = "Makale Analisti";
+}
+
+        <header id="home" class="section">
+            <div class="header_main">
+                <!-- header inner -->
+                <div class="header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                                <div class="full">
+                                    <div class="center-desk">
+                                        <div class="logo" style="margin-top: 8px;">
+                                            <a href="#home" style="font-size: x-large;font-weight: bold;margin-top: 5px;">Makale Analisti</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                                <div class="menu-area">
+                                    <div class="limit-box">
+                                        <nav class="main-menu">
+                                            <ul class="menu-area-main">
+                                                <li><a href="#home">Ana Sayfa</a></li>
+                                                <li><a href="#service">Hizmetler</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end header inner -->
+                <section>
+                    <div class="bannen_inner">
+                        <div class="container">
+                            <div class="row marginii">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="taital_main">
+
+                                    </div>
+                                    <h1 class="web_text"><strong>Makale Analizi</strong></h1>
+                                    <p class="donec_text">Yazdığınız akademik makalelerin kurallara uygun olup olmadığını, referansların, şekillerin, tabloların sayısını sizler için analiz ediyoruz.</p>
+
+
+                                    @using (Html.BeginForm("analiysis", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                    {<input type="file" name="file" value="" />
+                                        <button class="get_bg" type="submit">Analiz Et</button>
+                                       
+                                    }
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="img-box">
+                                        <figure><img src="~/Content/woofer.png" alt="img"  style="width: 80%;"></figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="emaim-bt">
+                                <div class="col-md-9 margin-0">
+                                    <div class="input-group mb-3 margin-top-20">
+                                        <p class="donec_text">İnternet üzerindeki .pdf ve .docx uzantılı makalelerin linkini aşağıya kopyalayarak analizinizi yapabilirsiniz.</p>
+
+                                        <input type="text" class="form-control" placeholder="Makale Linkini Giriniz">
+                                        <div class="input-group-append">
+                                            <button class="search_bt" type="Subscribe"><a href="#">Analiz Et</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </header>
+        <!-- banner end -->
+        <!-- service start -->
+        <div id="service" class="choose_section">
+            <div class="container">
+                <div class="col-sm-12">
+                    <h1 class="choose_text">Neleri<span class="color"> İnceliyoruz?</span></h1>
+                    <p class="lorem_text">Makaleleri analiz ederken aşağıdaki ve daha bir çok analiz ettiğimiz nokta bulunmaktadır.</p>
+                </div>
+            </div>
+        </div>
+        <div class="choose_section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4">
+                        <div class="about_inner">
+                            <div class="icon"><a href="#"><img src="~/Content/icon-1.png"></a></div>
+                            <h2 class="totaly_text">Referans Analizi</h2>
+                            <p class="making">Makalede kaç adet referans kullanıldığı ve bu referansların makale içerisinde kontrol edilip edilmediği</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="choose_section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="about_inner">
+                            <div class="icon"><a href="#"><img src="~/Content/icon-1.png"></a></div>
+                            <h2 class="totaly_text">Atıf Analizi</h2>
+                            <p class="making">Makalede kaç adet atıfta bulunulduğunu ve bu arıfların sayısının 50'yi geçmemesi.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="about_inner">
+                            <div class="icon"><a href="#"><img src="~/Content/icon-1.png"></a></div>
+                            <h2 class="totaly_text">Şekil Analizi</h2>
+                            <p class="making">Makalede kaç adet Şekil kullanıldığı ve bu şekillerin makale içerisinde kontrol edilip edilmediği</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="about_inner">
+                            <div class="icon"><a href="#"><img src="~/Content/icon-1.png"></a></div>
+                            <h2 class="totaly_text">Tablo Analizi</h2>
+                            <p class="making">Makalede kaç adet Tablo kullanıldığı ve bu tabloların makale içerisinde kontrol edilip edilmediği</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- service end -->
+
+
+        <div class="copyright_main">
+            <div class="container">
+                <p class="copy_text">© 2021 Makale Analisti.</a></p>
+            </div>
+        </div>
+
+
+        <!-- contact end -->
+        <!-- Javascript files-->
+        <script src="~/Scripts/jquery.min.js"></script>
+        <script src="~/Scripts/popper.min.js"></script>
+        <script src="~/Scripts/bootstrap.bundle.min.js"></script>
+
+
+        <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+        <script src="~/Scripts/plugin.js"></script>
+        <!-- sidebar -->
+        <script src="~/Scripts/jquery.mCustomScrollbar.concat.min.js")"></script>
+        <script src="~/Scripts/custom.js"></script>
+        <!-- javascript -->
+        @*<script src="~/Scripts/owl.carousel.js"></script>*@
+        @*<script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>*@
+        <script>
+      
+            $(document).ready(function () {
+                $(function () {
+                    $('a#submit_link').click(function () {
+                        $('form#makaleform').submit();
+                    });
+                });
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+
+         $(".zoom").hover(function(){
+
+         $(this).addClass('transition');
+         }, function(){
+
+         $(this).removeClass('transition');
+         });
+         });
+
+        </script>
+
+   

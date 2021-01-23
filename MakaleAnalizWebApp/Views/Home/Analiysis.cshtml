@@ -1,0 +1,48 @@
+﻿
+@model List<MakaleAnalizWebApp.Models.Result>
+@{
+    ViewBag.Title = "Result";
+}
+
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Messaj</th>
+                    <th>Sonuç</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.message </td>
+                    <td>
+                        @if (item.isSuccess)
+                        {
+                        <td class="text-center">
+                            <img src="~/Content/succes.png" width="25px" height="25px" />
+                        </td>
+                    }
+                    else
+                    {
+
+                        <td class="text-center">
+                            <img src="~/Content/error-icon.png" width="25px" height="25px" />
+                        </td>
+                    }
+                    </tr>
+                }
+            </tbody>
+
+
+        </table>
+
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
